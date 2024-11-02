@@ -25,7 +25,7 @@ export const projects = [
   {
     title: 'Adaptive Monitoring System',
     titleDe: 'Adaptives Monitoring-System',
-    year: '2024',
+    year: '2025',
     description:
       'Bachelor thesis project on self-adaptive surveillance for cool-storage environments with temperature and humidity monitoring.',
     descriptionDe:
@@ -50,7 +50,7 @@ export const projects = [
   {
     title: 'Sensor Arduino Web Application',
     titleDe: 'Sensor-Arduino-Webanwendung',
-    year: '2024',
+    year: '2025',
     description:
       'MQ sensor data analysis to determine qualitative food properties, such as ripeness levels of fruits and vegetables.',
     descriptionDe:
@@ -63,7 +63,7 @@ export const projects = [
   {
     title: 'JogTeams',
     titleDe: 'JogTeams',
-    year: '2025',
+    year: '2026',
     description:
       'Backend-driven web application for organizing social running sessions with run creation, join requests, and in-app messaging.',
     descriptionDe:
@@ -134,6 +134,16 @@ export const projects = [
     description: 'Coming soon.',
     descriptionDe: 'Demnaechst verfuegbar.',
     tech: ['php', 'html', 'css'],
+    projectUrl: '',
+    demoUrl: ''
+  },
+  {
+    title: 'Digit Android Machine Learning Touch Sensor',
+    titleDe: 'Digit Android Machine Learning Touch Sensor',
+    year: 'COMING...',
+    description: 'Coming soon.',
+    descriptionDe: 'Demnaechst verfuegbar.',
+    tech: ['android', 'java', 'scikit-learn'],
     projectUrl: '',
     demoUrl: ''
   }
