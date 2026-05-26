@@ -140,7 +140,7 @@ export default function Resume() {
         <div className="resume-icon">CV</div>
         <h1>{t.resume.heading}</h1>
         <p>{t.resume.headText}</p>
-        <span className="tag">{t.resume.updated}: 08/09/2024</span>
+        <span className="tag">{t.resume.updated}: 08/09/2025</span>
         <div className="resume-actions">
           <a className="btn" href={resumePdfUrl} target="_blank" rel="noreferrer">{t.resume.viewFull}</a>
           <a className="btn" href={resumePdfUrl} download>{t.resume.download}</a>
