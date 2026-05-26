@@ -16,7 +16,10 @@ function applyThemeVars(theme) {
 }
 
 export function ThemeProvider({ children }) {
-  const [themeKey, setThemeKey] = useState(() => localStorage.getItem(THEME_KEY) || 'default');
+  const [themeKey, setThemeKey] = useState(() => {
+    const savedThemeKey = localStorage.getItem(THEME_KEY) || 'default';
+    return themes[savedThemeKey] ? savedThemeKey : 'default';
+  });
   const [darkMode, setDarkMode] = useState(() => localStorage.getItem(DARK_KEY) === '1');
 
   const activeTheme = themes[themeKey] || themes.default;

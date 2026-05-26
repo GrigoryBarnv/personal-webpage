@@ -48,17 +48,7 @@ export const themes = {
     textAccent: '#0369a1',
     borderAccent: '#38bdf8',
     icon: '\u2601'
-  },
-  ocean: {
-    key: 'ocean',
-    name: 'Ocean',
-    accent: '#0ea5e9',
-    accentDark: '#0284c7',
-    accentSoft: '#e0f2fe',
-    textAccent: '#0284c7',
-    borderAccent: '#0ea5e9',
-    icon: '\u2248'
   }
 };
 
-export const themeOrder = ['default', 'earth', 'wind', 'fire', 'air', 'ocean'];
+export const themeOrder = ['default', 'earth', 'wind', 'fire', 'air'];
