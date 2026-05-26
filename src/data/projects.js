@@ -13,14 +13,14 @@ export const projects = [
     demoUrl: 'https://grigorybarnv.github.io/movie-api-app/#/'
   },
   {
-    title: 'Different Webpage',
-    titleDe: 'Verschiedene Webseite',
+    title: 'Personal Webpage',
+    titleDe: 'Persoenliche Webseite',
     year: '2024',
-    description: 'Standalone website with custom layout, responsive design, and a clear page structure.',
-    descriptionDe: 'Eigenständige Webseite mit individuellem Layout, responsivem Design und klarer Seitenstruktur.',
+    description: 'Personal portfolio website with responsive design, project cards, and resume preview.',
+    descriptionDe: 'Persoenliche Portfolio-Webseite mit responsivem Design, Projektkarten und Lebenslauf-Vorschau.',
     tech: ['html', 'css', 'javascript'],
-    projectUrl: '#',
-    demoUrl: '#'
+    projectUrl: 'https://github.com/GrigoryBarnv/personal-webpage',
+    demoUrl: 'https://grigorybarnv.github.io/personal-webpage/#/'
   },
   {
     title: 'Adaptive Monitoring System',
@@ -98,6 +98,8 @@ export const projects = [
     demoUrl: 'https://grigorybarnv.github.io/to-do-list-app-jquery/'
   }
 ];
+
+
 
 
 
