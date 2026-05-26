@@ -1,5 +1,6 @@
 import { useLanguage } from '../context/LanguageContext';
 import { i18n } from '../data/i18n';
+import { resumePdfPreviewUrl, resumePdfUrl } from '../data/resumeAsset';
 
 export default function ResumePreview() {
   const { language } = useLanguage();
@@ -12,11 +13,11 @@ export default function ResumePreview() {
       <div className="pdf-placeholder">
         <iframe
           className="pdf-frame"
-          src="/Lebenslauf_Baranov.pdf#view=FitH"
+          src={resumePdfPreviewUrl}
           title="Resume PDF Preview"
         />
       </div>
-      <code>/Lebenslauf_Baranov.pdf</code>
+      <code>{resumePdfUrl}</code>
     </section>
   );
 }

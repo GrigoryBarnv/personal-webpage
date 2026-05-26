@@ -1,6 +1,7 @@
 import ResumePreview from '../components/ResumePreview';
 import { useLanguage } from '../context/LanguageContext';
 import { i18n } from '../data/i18n';
+import { resumePdfUrl } from '../data/resumeAsset';
 
 const educationEn = [
   'University of Hohenheim: B.Sc. Agricultural Biology, focus on Data Analysis and Food Informatics',
@@ -141,8 +142,8 @@ export default function Resume() {
         <p>{t.resume.headText}</p>
         <span className="tag">{t.resume.updated}: 08/09/2024</span>
         <div className="resume-actions">
-          <a className="btn" href="/Lebenslauf_Baranov.pdf" target="_blank" rel="noreferrer">{t.resume.viewFull}</a>
-          <a className="btn" href="/Lebenslauf_Baranov.pdf" download>{t.resume.download}</a>
+          <a className="btn" href={resumePdfUrl} target="_blank" rel="noreferrer">{t.resume.viewFull}</a>
+          <a className="btn" href={resumePdfUrl} download>{t.resume.download}</a>
         </div>
       </div>
 
@@ -189,4 +190,3 @@ export default function Resume() {
     </section>
   );
 }
-
