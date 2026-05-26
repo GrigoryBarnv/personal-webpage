@@ -35,16 +35,18 @@ export default function ProjectCard({ project }) {
           {t.card.viewProject}
           <ExternalLink size={16} aria-hidden="true" />
         </a>
-        <a
-          className="project-card__btn project-card__btn--secondary"
-          href={project.demoUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label={`${t.card.demo}: ${title}`}
-        >
-          {t.card.demo}
-          <ExternalLink size={16} aria-hidden="true" />
-        </a>
+        {project.demoUrl && (
+          <a
+            className="project-card__btn project-card__btn--secondary"
+            href={project.demoUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`${t.card.demo}: ${title}`}
+          >
+            {t.card.demo}
+            <ExternalLink size={16} aria-hidden="true" />
+          </a>
+        )}
       </div>
     </article>
   );
