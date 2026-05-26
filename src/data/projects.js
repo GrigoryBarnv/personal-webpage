@@ -96,6 +96,46 @@ export const projects = [
     tech: ['javascript', 'jquery', 'html', 'css'],
     projectUrl: 'https://github.com/GrigoryBarnv/to-do-list-app-jquery',
     demoUrl: 'https://grigorybarnv.github.io/to-do-list-app-jquery/'
+  },
+  {
+    title: 'Chat App',
+    titleDe: 'Chat-App',
+    year: 'COMING...',
+    description: 'Coming soon.',
+    descriptionDe: 'Demnaechst verfuegbar.',
+    tech: ['react', 'javascript', 'socket.io'],
+    projectUrl: '',
+    demoUrl: ''
+  },
+  {
+    title: 'Job Tracker SaaS App C#',
+    titleDe: 'Job-Tracker SaaS-App C#',
+    year: 'COMING...',
+    description: 'Coming soon.',
+    descriptionDe: 'Demnaechst verfuegbar.',
+    tech: ['csharp', 'sql', 'react'],
+    projectUrl: '',
+    demoUrl: ''
+  },
+  {
+    title: 'E-commerce TypeScript',
+    titleDe: 'E-Commerce TypeScript',
+    year: 'COMING...',
+    description: 'Coming soon.',
+    descriptionDe: 'Demnaechst verfuegbar.',
+    tech: ['typescript', 'react', 'css'],
+    projectUrl: '',
+    demoUrl: ''
+  },
+  {
+    title: 'PHP App',
+    titleDe: 'PHP-App',
+    year: 'COMING...',
+    description: 'Coming soon.',
+    descriptionDe: 'Demnaechst verfuegbar.',
+    tech: ['php', 'html', 'css'],
+    projectUrl: '',
+    demoUrl: ''
   }
 ];
 

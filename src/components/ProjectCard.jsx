@@ -8,6 +8,8 @@ export default function ProjectCard({ project }) {
   const t = i18n[language];
   const title = language === 'de' && project.titleDe ? project.titleDe : project.title;
   const description = language === 'de' && project.descriptionDe ? project.descriptionDe : project.description;
+  const hasProjectUrl = project.projectUrl && project.projectUrl !== '#';
+  const hasDemoUrl = project.demoUrl && project.demoUrl !== '#';
 
   return (
     <article className="project-card project-card--portfolio">
@@ -24,30 +26,34 @@ export default function ProjectCard({ project }) {
         ))}
       </div>
 
-      <div className="project-card__actions">
-        <a
-          className="project-card__btn"
-          href={project.projectUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label={`${t.card.viewProject}: ${title}`}
-        >
-          {t.card.viewProject}
-          <ExternalLink size={16} aria-hidden="true" />
-        </a>
-        {project.demoUrl && (
-          <a
-            className="project-card__btn project-card__btn--secondary"
-            href={project.demoUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label={`${t.card.demo}: ${title}`}
-          >
-            {t.card.demo}
-            <ExternalLink size={16} aria-hidden="true" />
-          </a>
-        )}
-      </div>
+      {(hasProjectUrl || hasDemoUrl) && (
+        <div className="project-card__actions">
+          {hasProjectUrl && (
+            <a
+              className="project-card__btn"
+              href={project.projectUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`${t.card.viewProject}: ${title}`}
+            >
+              {t.card.viewProject}
+              <ExternalLink size={16} aria-hidden="true" />
+            </a>
+          )}
+          {hasDemoUrl && (
+            <a
+              className="project-card__btn project-card__btn--secondary"
+              href={project.demoUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`${t.card.demo}: ${title}`}
+            >
+              {t.card.demo}
+              <ExternalLink size={16} aria-hidden="true" />
+            </a>
+          )}
+        </div>
+      )}
     </article>
   );
 }
